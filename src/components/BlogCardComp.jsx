@@ -38,7 +38,7 @@ export default function BlogCardComp() {
               <div className="relative z-[1] overflow-hidden">
                 <Image
                   src="images/blog.svg"
-                  className="w-[500px] h-[400px] object-cover rounded-2xl transition-all duration-300 ease-linear transform group-hover:scale-125"
+                  className="w-[500px] h-[400px] object-cover transition-all duration-300 ease-linear transform group-hover:scale-125"
                   width={300}
                   height={600}
                 />
