@@ -4,6 +4,7 @@ import Image from "next/image";
 import { MdOutlineStarPurple500, MdOutlineStarOutline } from "react-icons/md";
 import { BsBasket2 } from "react-icons/bs";
 import { CiHeart } from "react-icons/ci";
+import { TbColorFilter } from "react-icons/tb";
 
 export default function ProductCardComp() {
   return (
@@ -62,6 +63,42 @@ export default function ProductCardComp() {
               </span>
             </div>
           </ProductCard>
+          <ProductCard default_2>
+            <Image
+              className="w-full h-[350px] block"
+              src="images/blog.svg"
+              width={300}
+              height={300}
+            />
+            <div className="absolute top-2 right-2 bg-[#800080]/20 w-10 h-10 rounded-full shadow-lg flex items-center justify-center text-[#800080]">
+              <CiHeart size={20} />
+            </div>
+            <div className="absolute top-2 left-2 bg-[#800080]/20 w-10 h-10 rounded-full shadow-lg flex items-center justify-center text-[#800080]">
+              <TbColorFilter size={20} />
+            </div>
+            <div className="py-2 px-3">
+              <div className="flex items-center justify-between">
+                <h2 class="text-lg font-normal">
+                  Product Name
+                  <span className="block text-xs">Brands</span>
+                </h2>
+                <div className="bg-[#800080]/20 px-2 py-1 flex items-center rounded-lg text-[#800080]">
+                  <MdOutlineStarPurple500 />
+                  <span className="block mx-1 text-sm font-light">4.7</span>
+                </div>
+              </div>
+              <div class="flex items-center justify-between mt-3">
+                <div>
+                  <span class="text-3xl font-bold">$599</span>
+                </div>
+                <Button default_2>
+                  <div className="flex items-center gap-2">
+                    <BsBasket2 /> Add to Card
+                  </div>
+                </Button>
+              </div>
+            </div>
+          </ProductCard>
           <ProductCard default_3>
             <div className="p-2 relative">
               <Image
@@ -94,6 +131,44 @@ export default function ProductCardComp() {
                   >
                     <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z" />
                   </svg>
+                </div>
+              </div>
+            </div>
+          </ProductCard>
+          <ProductCard default_4>
+            <div className="group relative overflow-hidden w-full h-full cursor-pointer">
+              <Image
+                className="w-full h-[350px] block relative z-[1]"
+                src="images/blog.svg"
+                width={300}
+                height={300}
+              />
+              <div className="absolute top-2 right-2 z-[2] bg-[#800080]/20 w-10 h-10 rounded-full shadow-lg flex items-center justify-center text-[#800080]">
+                <CiHeart size={20} />
+              </div>
+              <div className="absolute top-2 left-2 z-[2] bg-[#800080]/20 w-10 h-10 rounded-full shadow-lg flex items-center justify-center text-[#800080]">
+                <TbColorFilter size={20} />
+              </div>
+              <div className="w-full bg-white/50 backdrop-blur-md py-2 px-3 absolute lg:-bottom-[100%] bottom-0 z-[2] lg:opacity-0 transition-all duration-500 ease-in group-hover:bottom-0 lg:group-hover:opacity-100">
+                <div className="flex items-center justify-between">
+                  <h2 class="text-lg font-normal">
+                    Product Name
+                    <span className="block text-xs">Brands</span>
+                  </h2>
+                  <div className="bg-[#800080]/20 px-2 py-1 flex items-center rounded-lg text-[#800080]">
+                    <MdOutlineStarPurple500 />
+                    <span className="block mx-1 text-sm font-light">4.7</span>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between mt-3">
+                  <div>
+                    <span class="text-3xl font-bold">$599</span>
+                  </div>
+                  <Button default_3>
+                    <div className="flex items-center gap-2">
+                      <BsBasket2 /> Add to Card
+                    </div>
+                  </Button>
                 </div>
               </div>
             </div>
