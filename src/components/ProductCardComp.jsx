@@ -227,16 +227,27 @@ export default function ProductCardComp() {
               <div className="absolute top-2 right-2 z-[2] bg-[#800080]/20 w-10 h-10 rounded-full shadow-lg flex items-center justify-center text-[#800080] hover:bg-[#800080]/40 hover:text-white transition-all ease-in duration-150">
                 <CiHeart size={20} />
               </div>
-                <div className="w-full bg-gradient-to-b from-[#800080]/10  0 to-90% to-[#800080]/30 from-10% backdrop-blur-sm py-1 px-2 absolute bottom-0 z-[2] text-white">
-                <div className="flex items-center justify-between">
-                  <h2 class="text-lg font-normal">
-                    Product Name
-                    <span className="block text-xs">Brands</span>
-                  </h2>
-                </div>
-                <div>
-                  <span class="text-base font-bold">$599</span>
-                </div>
+              <div className="w-full bg-gradient-to-b from-[#800080]/10  0 to-90% to-[#800080]/30 from-10% backdrop-blur-sm py-1 px-2 absolute bottom-0 z-[2] text-white">
+                <ul className="flex items-center justify-between">
+                  <li>
+                    <div className="flex items-center justify-between">
+                      <h2 class="text-lg font-normal">
+                        Product Name
+                        <span className="block text-xs">Brands</span>
+                      </h2>
+                    </div>
+                    <div>
+                      <span class="text-base font-bold">$599</span>
+                    </div>
+                  </li>
+                  <li>
+                    <Button default_1>
+                      <div className="flex items-center gap-2">
+                        <BsBasket2 /> Add
+                      </div>
+                    </Button>
+                  </li>
+                </ul>
               </div>
             </div>
           </ProductCard>
